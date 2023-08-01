@@ -7,17 +7,12 @@ from flask import jsonify
 from models import storage
 
 
-
 @app_views.route("/status")
 def status():
     """
     Create JSON status
     """
-    return jsonify(
-        {
-            'status': 'OK'
-        }
-    )
+    return jsonify({'status': 'OK'})
 
 
 @app_views.route("/stats")
